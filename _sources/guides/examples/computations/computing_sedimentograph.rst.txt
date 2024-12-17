@@ -81,7 +81,7 @@ Using the sedimentograph to evaluate time distribution in subsurface
     :include-source:
     :context: close-figs
 
-    time_bins = np.linspace(0, golfcube.t[-1], num=7)
+    time_bins = np.linspace(0, float(golfcube.t[-1]), num=7)
     (time_sedimentograph,
         time_radii,
         _) = dm.strat.compute_sedimentograph(
@@ -113,6 +113,6 @@ References
 ~~~~~~~~~~
 
 .. [1] Liang, M., Van Dyk, C., and Passalacqua, P. (2016), Quantifying
-       the patterns and dynamics of river deltas under conditions of 
-       steady forcing and relative sea level rise, J. Geophys. Res. 
+       the patterns and dynamics of river deltas under conditions of
+       steady forcing and relative sea level rise, J. Geophys. Res.
        Earth Surf., 121, 465– 496, doi:10.1002/2015JF003653.

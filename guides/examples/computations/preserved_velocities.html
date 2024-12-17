@@ -48,9 +48,10 @@
 <p>This assertion of “ordinariness” has been examined in the context of vertical excursions of bed elevation (whereby more extreme excursions represent extreme events; <a class="footnote-reference brackets" href="#id5" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>).
 We can go further than this with the pyDeltaRCM model outputs, which co-locate bed elevation change with velocity, in essence recording the actual magnitude of a flow event rather than bed-elevation change.
 With this paired information we can interrogate the velocity of deposits in the stratigraphic record.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
 <span class="kn">import</span> <span class="nn">deltametrics</span> <span class="k">as</span> <span class="nn">dm</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">golfcube</span> <span class="o">=</span> <span class="n">dm</span><span class="o">.</span><span class="n">sample_data</span><span class="o">.</span><span class="n">golf</span><span class="p">()</span>
 <span class="n">golfcube</span><span class="o">.</span><span class="n">stratigraphy_from</span><span class="p">(</span><span class="s1">&#39;eta&#39;</span><span class="p">)</span>
@@ -93,7 +94,7 @@ With this paired information we can interrogate the velocity of deposits in the 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>(<a class="reference download internal" download="" href="../../../_downloads/556742d76f20e3ac194ee2cee4cd677c/preserved_velocities.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../../_downloads/c03c9b0b7284f8988e54667c85b3f048/preserved_velocities.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>)</p>
+<p>(<a class="reference download internal" download="" href="../../../_downloads/1a1dc2a964f7be5a23a267af64c8218a/preserved_velocities.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../../_downloads/a83c4f7433d5662be27ba5091fe7f9fc/preserved_velocities.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../../_downloads/34c3d0770caaf6fbd5b60c62850233b5/preserved_velocities.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../../_images/preserved_velocities.png" class="plot-directive" src="../../../_images/preserved_velocities.png" />
 </figure>
